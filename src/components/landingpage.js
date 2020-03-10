@@ -16,17 +16,17 @@ class Landing extends Component {
                             <div className="social-links">
 
                                 {/* LinkedIn */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/seungmin4035/" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square" aria-hidden="true"/>
                                 </a>
 
                                 {/* Githube */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://github.com/absinthe4902?tab=repositories" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square" aria-hidden="true"/>
                                 </a>
 
                                 {/* T-story blog */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://calgaryhomeless.tistory.com/" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-rss-square" aria-hidden="true"/>
                                 </a>
 
