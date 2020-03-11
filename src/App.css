@@ -64,6 +64,7 @@
     display: flex;
 }
 
+/*contact css*/
 .contact-body {
     margin: auto;
     position: fixed;
@@ -98,11 +99,16 @@
     margin: auto;
 }
 
-
 .contact-list i {
     align-items: center;
     font-size: 50px;
     padding-right: 3rem;
     padding-left: 5rem ;
+}
+
+/* resume css*/
+.resume-right-col {
+    background: #27221F;
+    color: white;
 }
 
