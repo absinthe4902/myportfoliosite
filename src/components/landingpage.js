@@ -12,7 +12,7 @@ class Landing extends Component {
                         <div className="banner-text">
                             <h1>Full Stack Web Developers</h1>
                             <hr />
-                            <p>JAVA | Spring-boot | JavaScript | React | HTML/CSS | Linux | Mysql</p>
+                            <p>JAVA | Spring-boot | JavaScript | React | HTML/CSS | Linux | Mysql | Android</p>
                             <div className="social-links">
 
                                 {/* LinkedIn */}
