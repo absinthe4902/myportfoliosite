@@ -10,11 +10,17 @@ class Projects extends Component {
         };
 
         this.toggleCategories = this.toggleCategories.bind(this);
+        this.goToPage = this.goToPage.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         console.log(prevState.activeTab);
         console.log(this.state.activeTab)
+    }
+
+    goToPage(e, url) {
+        window.open(url, '_blank');
+        e.preventDefault();
     }
 
     toggleCategories() {
@@ -35,8 +41,10 @@ class Projects extends Component {
                                 Making portfolio site via ReactJs
                             </CardText>
                             <CardActions border>
-                                <Button colored>Github</Button>
-                                <Button colored>LiveDemo</Button>
+                                <Button colored><a href="https://github.com/absinthe4902/myportfoliosite" rel="noopener noreferrer" target="_blank">Github</a></Button>
+                                <Button onClick={(e) => {
+                                    this.goToPage(e, 'https://github.com/absinthe4902/myportfoliosite')
+                                }}>LiveDemo</Button>
                             </CardActions>
                             <CardMenu style={{color: '#fff'}}>
                                 <IconButton name="share"/>
@@ -50,10 +58,10 @@ class Projects extends Component {
                                 height: '176px',
                                 background: 'url(https://miro.medium.com/max/1200/1*aLg1-G2UAlaKpBopRnmCRg.png) center / cover'
                             }}>
-                                React Project #1
+                                React Project #2
                             </CardTitle>
                             <CardText>
-                                Making portfolio site via ReactJs
+                                Preparing...
                             </CardText>
                             <CardActions border>
                                 <Button colored>Github</Button>
@@ -71,10 +79,10 @@ class Projects extends Component {
                                 height: '176px',
                                 background: 'url(https://miro.medium.com/max/1200/1*aLg1-G2UAlaKpBopRnmCRg.png) center / cover'
                             }}>
-                                React Project #1
+                                React Project #3
                             </CardTitle>
                             <CardText>
-                                Making portfolio site via ReactJs
+                                Preparing...
                             </CardText>
                             <CardActions border>
                                 <Button colored>Github</Button>
