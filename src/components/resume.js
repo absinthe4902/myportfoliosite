@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from "react-mdl";
 import mylogo from "../img/mylogo.png"
+import Education from "./education";
+import Experience from "./experience";
+import Skills from "./skills";
 
 class Resume extends Component {
     render() {
@@ -31,7 +34,65 @@ class Resume extends Component {
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2>Education</h2>
+                        <Education
+                            startYear={2014}
+                            endYear={2020}
+                            schoolName="Konggi University"
+                            schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s"
+                        />
 
+                        <Education
+                            startYear={2011}
+                            endYear={2014}
+                            schoolName="Bundang Chonang Highschool"
+                            schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s"
+                        />
+                        <hr style={{borderTop:'3px solid #e22947'}}/>
+
+                        <h2>Experience</h2>
+                        <Experience
+                            startYear={2019}
+                            endYear="on going"
+                            jobName="DNX"
+                            jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s"
+                        />
+                        <Experience
+                            startYear={2017}
+                            endYear={2017}
+                            jobName="StarBucks Canada"
+                            jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s"
+                        />
+                        <hr style={{borderTop:'3px solid #e22947'}}/>
+
+                        <h2>Skills</h2>
+                        <Skills
+                            skill="javascript"
+                            progress={60}
+                        />
+                        <Skills
+                            skill="java"
+                            progress={70}
+                        />
+                        <Skills
+                            skill="spring-boot"
+                            progress={90}
+                        />
+                        <Skills
+                            skill="HTML/CSS"
+                            progress={40}
+                        />
+                        <Skills
+                            skill="Linux"
+                            progress={40}
+                        />
+                        <Skills
+                            skill="React"
+                            progress={25}
+                        />
                     </Cell>
                 </Grid>
             </div>
